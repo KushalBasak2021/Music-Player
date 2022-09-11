@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- custom css file -->
+  <link rel="stylesheet" href="./style.css" />
+
+  <!-- Font AWesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Music Player App</title>
+</head>
+
+<body>
+  <div class="music-card">
+    <div class="music-image">
+      <img src="./images/music-1.jpg" class="song-image" />
+    </div>
+    <div class="music-details">
+      <h3 class="music-title">Harley Bird - Home</h3>
+      <h5 class="music-artist">Jordan Schor</h5>
+    </div>
+    <div class="song">
+      <audio src="./songs/music-1.mp3"></audio>
+    </div>
+    <div class="progress-area">
+      <div class="progress-div">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="song-timing">
+        <p class="current-time">0:00</p>
+        <p class="total-time">3:40</p>
+      </div>
+    </div>
+    <div class="music-controls">
+      <button class="backward"><i class="fa-solid fa-backward"></i></button>
+      <button class="pause-play">
+        <i class="fa-solid fa-play" id="play"></i>
+      </button>
+      <button class="forward"><i class="fa-solid fa-forward"></i></button>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
